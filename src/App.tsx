@@ -6,12 +6,12 @@ function App() {
   return (
     <> 
       <Router>
-      <nav> 
-        <ol>
-         <li>    
+      <nav className='bg-slate-300'> 
+        <ol className=' flex flex-row  '>  
+         <li className='mr-3.5 hover:text-white'>    
          <Link to="/">HOME</Link>
          </li>
-         <li>    
+         <li className='mr-3.5 hover:text-white'>    
          <Link to="/options">OPTIONS</Link>
          </li>
         </ol>  
