@@ -1,13 +1,36 @@
 import './App.css'
 
-function App() {
+import { Route, Routes, BrowserRouter as Router, Link } from 'react-router-dom'
+import Home from './Pages/Home'
+import Options from './Pages/Options'
 
+function App() {
   return (
     <>
-      <h1>Social Mirror</h1>
-      <p>Create and curate your ideal online professional presence with a profile preview of major social media webistes.
-</p>
-    </> 
+
+
+
+      <Router>
+
+      <nav>
+        <ol>
+         <li>    
+         <Link to="/">HOME</Link>
+         </li>
+         <li>    
+         <Link to="/options">OPTIONS</Link>
+         </li>
+        </ol>  
+      </nav>
+
+
+
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="/options" Component={Options} />
+        </Routes>
+      </Router>
+    </>
   )
 }
 
