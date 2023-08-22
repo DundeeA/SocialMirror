@@ -22,11 +22,11 @@ function Twitter() {
             ? URL.createObjectURL(selectedImage)
             : 'https://i.pinimg.com/736x/1e/94/7d/1e947dfcaad552afa209bceebbfac47b.jpg'
         }
-        alt="profile picture place holder"
+        alt="profile picture"
       />
 
-      <input type="file" accept="image/" onChange={handleImageChange} />
-    </>
+      <input aria-label='Upload profile picture' type="file" accept="image/" onChange={handleImageChange} />
+    </> 
   )
 }
 
