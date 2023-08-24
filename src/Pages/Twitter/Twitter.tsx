@@ -16,8 +16,8 @@ function Twitter() {
   return (
     <>
       <img
-        className="object-fit h-28 rounded-full"
-        src={
+        className="object-fit h-28 w-28 rounded-full"
+        src={ 
           selectedImage
             ? URL.createObjectURL(selectedImage)
             : 'https://i.pinimg.com/736x/1e/94/7d/1e947dfcaad552afa209bceebbfac47b.jpg'
